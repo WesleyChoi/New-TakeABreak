@@ -1,0 +1,14 @@
+.body {
+    position: absolute;
+    
+}
+
+.container {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.preload {
+    text-align: center;
+    color: #0000ff;
+    font-size: 3em;
+}
