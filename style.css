@@ -5,10 +5,37 @@
 
 .container {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.preload {
     text-align: center;
     color: #0000ff;
     font-size: 3em;
+}
+
+.preload {
+    animation: fadein 4s;
+}
+
+.header-main {
+    animation: fadeindelay 8s;
+    /* animation-delay: 3s; */
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeindelay {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
