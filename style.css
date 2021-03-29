@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
 .body {
     position: absolute;
-    
+    background-color: #a6a4a4;
 }
 
-.container {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.intro {
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     color: #0000ff;
     font-size: 3em;
@@ -15,7 +17,7 @@
 }
 
 .header-main {
-    animation: fadeindelay 8s;
+    animation: fadeindelay-header 8s;
     /* animation-delay: 3s; */
 }
 
@@ -28,14 +30,70 @@
     }
 }
 
-@keyframes fadeindelay {
+@keyframes fadeindelay-header {
     0% {
         opacity: 0;
     }
     25% {
         opacity: 0;
     }
+    75% {
+        opacity: 0.9;
+    }
     100% {
         opacity: 1;
+    }
+}
+
+/* BREATHING ANIMATION */
+.breathing-animation {
+    animation: breathing 4s ease-out infinite normal;
+}
+
+
+/* CIRCLE */
+.circle-breathing {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #0000ff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    animation: fadeindelay-circle 10s;
+}
+
+@keyframes fadeindelay-circle {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes breathing {
+    0% {
+        transform: scale(0);
+    }
+    5% {
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(2);
+    }
+    50% {
+        transform: scale(2);
+    }
+    90% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(0);
     }
 }
